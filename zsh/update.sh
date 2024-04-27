@@ -10,7 +10,7 @@ sleep 1
 echo "[*] Updates complete."
 echo "------------------------"
 sleep 1
-echo "[*] Running: 'sudo apt autoremove'"
+echo "[*] Running: 'sudo apt autoremove -y'"
 sudo apt autoremove -y
 sleep 0.5
 echo "--------------------------------------------"
