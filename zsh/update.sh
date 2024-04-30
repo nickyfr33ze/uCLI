@@ -8,6 +8,7 @@ sleep 1
 echo "------------------------"
 sleep 1
 echo "[*] Updates complete."
+sleep 1
 echo "------------------------"
 sleep 1
 echo "[*] Running: sudo apt upgrade -y"
@@ -16,6 +17,7 @@ sudo apt upgrade -y
 sleep 1
 echo "------------------------"
 echo "[*] Upgrades complete."
+sleep 1
 echo "------------------------"
 sleep 1
 echo "[*] Running: 'sudo apt autoremove -y'"
@@ -24,5 +26,6 @@ sleep 1
 echo "--------------------------------------------"
 sleep 1
 echo "[*] Applications autoremoved successfully."
+sleep 1
 echo "--------------------------------------------"
 sleep 2
