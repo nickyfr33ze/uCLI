@@ -11,9 +11,9 @@ echo "[*] Updates complete."
 sleep 1
 echo "------------------------"
 sleep 1
-echo "[*] Running: sudo apt upgrade -y"
+echo "[*] Running: sudo apt upgrade -f -y"
 sleep 1
-sudo apt upgrade -y
+sudo apt upgrade -f -y
 sleep 1
 echo "------------------------"
 echo "[*] Upgrades complete."
