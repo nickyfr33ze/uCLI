@@ -29,3 +29,7 @@ echo "[*] Applications autoremoved successfully."
 sleep 1
 echo "--------------------------------------------"
 sleep 2
+echo "[*] Updates & Upgrades applied successfully. Terminiating program..."
+sleep 2
+echo "--------------------------------------------"
+
