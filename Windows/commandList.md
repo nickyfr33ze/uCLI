@@ -6,4 +6,5 @@ retrieves a list of all PowerShell commands whose modules have been loaded. This
 `Get-Help`
 will display the syntax of any PowerShell cmdlet. run this followed by whose syntax you want to view
 
-
+`Get-StartupApps`
+will display all the apps and their folders in which they 'start' from (their 'exe')
