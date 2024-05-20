@@ -27,9 +27,7 @@ echo "--------------------------------------------"
 sleep 1
 echo "[*] Applications autoremoved successfully."
 sleep 1
-echo "--------------------------------------------"
-sleep 2
-echo "--------------------------------------------"
+echo "============================================"
 sleep 1
 echo "[!] Updates & Upgrades applied successfully." 
 sleep 1.5
