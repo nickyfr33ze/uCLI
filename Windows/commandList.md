@@ -8,3 +8,6 @@ will display the syntax of any PowerShell cmdlet. run this followed by whose syn
 
 `Get-StartupApps`
 will display all the apps and their folders in which they 'start' from (their 'exe')
+
+`Connect-ExchangeOnline -UserPrincipalName <userID>`
+this will connect to any exchange services connected to the M$ account
