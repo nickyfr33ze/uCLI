@@ -13,6 +13,7 @@ echo "------------------------"
 sleep 1
 echo "[*] Running: sudo apt upgrade -f -y"
 sleep 1
+echo "-----------------------------------"
 sudo apt upgrade -f -y
 sleep 1
 echo "------------------------"
