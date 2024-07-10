@@ -19,10 +19,9 @@ while true; do
     ping $IP_ADDRESS
 
     # Check the exit status of the ping command
-    if [ $? -ne 0 ]; then
-        echo "Failed to connect to $IP_ADDRESS after 4 attempts."
-        exit 1
+    if [[ $ping_output == *"Request timeout for "* ]]; then
+        echo "Failed to connect to $IP_ADDRESS"
+        break
     fi
 
-    echo "Successfully connected to $IP_ADDRESS."
 done
