@@ -1,0 +1,8 @@
+A URL to use as a reference:
+https://www.windowscentral.com/how-clean-and-format-storage-drive-using-diskpart-windows-10
+
+The idea is to make a script that automates the reformatting of a USB into a FAT32 format.
+More scripts can be made for different formats and be pushed to a public repo to be shared.
+
+
+
