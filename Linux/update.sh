@@ -34,6 +34,16 @@ echo "[!] UPDATES AND UPGRADE APPLIED. "
 sleep 1.5
 echo "--------------------------------------------"
 sleep 1
+echo "[*] Running: 'sudo apt clean'"
+sudo apt clean
+sleep 1
+echo "[*] Running: 'sudo apt autoclean'"
+sudo apt autoclean
+sleep 1
+echo "[!] CLEANING COMPLETE."
+sleep 1
+echo "--------------------------------------------"
+sleep 1
 echo "[!] TERMINATING PROGRAM."
 sleep 1.5
 echo "============================================"
