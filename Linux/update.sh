@@ -33,6 +33,7 @@ sleep 1
 echo "[!] UPDATES AND UPGRADE APPLIED. "
 sleep 1.5
 echo "--------------------------------------------"
+sleep 1
 echo "[!] TERMINATING PROGRAM."
 sleep 1.5
 echo "============================================"
