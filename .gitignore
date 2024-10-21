@@ -1,8 +1,72 @@
 /.ssh/
 journal.md
-/ssh/
-<<<<<<< HEAD
-.DS_Store
-=======
 
->>>>>>> 469c6e9df2a3173d8eb02dca8f9ac5f0e718be43
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+
+# Bash and Batch specific
+*.sh.swp
+*.bat.swp
+*.sh~
+*.bat~
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Node modules (if you're using Node.js in your project)
+node_modules/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Ruby
+*.gem
+*.rbc
+/.config
+/coverage/
+/InstalledFiles
+/pkg/
+/spec/reports/
+/spec/examples.txt
+/test/tmp/
+/test/version_tmp/
+/tmp/
+
+# Ignore all local history of files
+.history
