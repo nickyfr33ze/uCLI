@@ -16,5 +16,5 @@ case $detail_level in
         echo "Invalid detail level. Please choose mini, basic, or full."
         ;;
 esac
-
+sleep 1
 echo "[*] System information scan completed."
