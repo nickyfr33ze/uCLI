@@ -1,3 +1,20 @@
+#!/bin/bash
+
 # Scanning system information on a macOS system/terminal
-echo [*] Running 'system_profiler -h'
-system_profiler -h
+echo "[*] Starting system information scan..."
+sleep 1
+echo "Please choose a detail level: mini, basic, or full"
+read detail_level
+sleep 1 
+echo "[*] Scanning system information with detail level: $detail_level"
+sleep 1
+case $detail_level in
+    mini|basic|full)
+        system_profiler -detaillevel $detail_level
+        ;;
+    *)
+        echo "Invalid detail level. Please choose mini, basic, or full."
+        ;;
+esac
+
+echo "[*] System information scan completed."
