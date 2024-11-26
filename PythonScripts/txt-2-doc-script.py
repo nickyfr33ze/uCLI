@@ -4,8 +4,8 @@ from docx import Document
 doc = Document()
 # Save the document
 # Ask the user for the file name
-file_name = input("Please enter the name for the document (with .docx extension): ")
-
+file_name = input("Please enter the name for the document (without .docx extension): ")
+file_name += file_name+".docx"
 # Add the content to the document in the quotations below:
 content = """
 
