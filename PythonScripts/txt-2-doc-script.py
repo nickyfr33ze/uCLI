@@ -1,5 +1,4 @@
 from docx import Document
-import time
 
 # Create a new Document
 doc = Document()
