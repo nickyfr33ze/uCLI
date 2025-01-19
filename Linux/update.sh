@@ -1,50 +1,50 @@
 echo "[*] Running updates..."
-sleep 1
+sleep 0.5
 echo "[*] Running: 'sudo apt update'"
-sleep 1
+sleep 0.5
 echo "[*] If you are not 'root' please input your password."
 sudo apt update
-sleep 1
+sleep 0.5
 echo "------------------------"
-sleep 1
+sleep 0.5
 echo "[*] Updates complete."
-sleep 1
+sleep 0.5
 echo "------------------------"
-sleep 1
+sleep 0.5
 echo "[*] Running: sudo apt upgrade -f -y"
-sleep 1
+sleep 0.5
 echo "-----------------------------------"
 sudo apt upgrade -f -y
-sleep 1
+sleep 0.5
 echo "------------------------"
 echo "[*] Upgrades complete."
-sleep 1
+sleep 0.5
 echo "------------------------"
-sleep 1
+sleep 0.5
 echo "[*] Running: 'sudo apt autoremove -y'"
 sudo apt autoremove -y
-sleep 1
+sleep 0.5
 echo "--------------------------------------------"
-sleep 1
+sleep 0.5
 echo "[*] Applications autoremoved successfully."
-sleep 1
+sleep 0.5
 echo "============================================"
-sleep 1
+sleep 0.5
 echo "[!] UPDATES AND UPGRADE APPLIED. "
-sleep 1.5
-echo "--------------------------------------------"
 sleep 1
+echo "--------------------------------------------"
+sleep 0.5
 echo "[*] Running: 'sudo apt clean'"
 sudo apt clean
-sleep 1
+sleep 0.5
 echo "[*] Running: 'sudo apt autoclean'"
 sudo apt autoclean
-sleep 1
+sleep 0.5
 echo "[!] CLEANING COMPLETE."
-sleep 1
+sleep 0.5
 echo "--------------------------------------------"
-sleep 1
+sleep 0.5
 echo "[!] TERMINATING PROGRAM."
-sleep 1.5
-echo "============================================"
-
+sleep 0.5
+echo "==========================================="
+sleep 0.5
