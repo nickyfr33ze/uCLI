@@ -39,6 +39,7 @@ sudo apt clean
 sleep 0.5
 echo "[*] Running: 'sudo apt autoclean'"
 sudo apt autoclean
+echo "--------------------------------------------"
 sleep 0.5
 echo "[!] CLEANING COMPLETE."
 sleep 0.5
