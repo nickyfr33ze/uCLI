@@ -28,7 +28,7 @@ echo "--------------------------------------------"
 sleep 0.5
 echo "[*] Applications autoremoved successfully."
 sleep 0.5
-echo "============================================"
+echo "--------------------------------------------"
 sleep 0.5
 echo "[!] UPDATES AND UPGRADE APPLIED. "
 sleep 1
@@ -43,7 +43,7 @@ echo "--------------------------------------------"
 sleep 0.5
 echo "[!] CLEANING COMPLETE."
 sleep 0.5
-echo "--------------------------------------------"
+echo "============================================"
 sleep 0.5
 echo "[!] TERMINATING PROGRAM."
 sleep 0.5
