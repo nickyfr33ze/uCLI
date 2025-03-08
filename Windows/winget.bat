@@ -1,5 +1,6 @@
 REM This script will be designed to update a Windows system from a CLI.
 echo [*] Running 'winget update' script...
+winget update
 echo [*] executing 'winget upgrade --all'
 winget upgrade --all
 echo ---------------------------------------------
