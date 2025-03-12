@@ -1,6 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
-color 0A
+color 7
 title System Integrity Checker and Repair Utility
 
 :: Check for admin privileges

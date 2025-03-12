@@ -71,5 +71,8 @@ pause
 goto menu
 
 :end
-echo [*] Terminating program.
-echo =============================================
+cls
+echo Thank you for using the Windows Package Manageer Utility.cls
+echo Exiting...
+timeout /t 2 >nul
+exit /b 0
