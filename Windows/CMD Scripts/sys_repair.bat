@@ -1,6 +1,5 @@
 @echo off
 setlocal enabledelayedexpansion
-color 7
 title System Integrity Checker and Repair Utility
 
 :: Check for admin privileges
@@ -19,7 +18,7 @@ echo  SYSTEM INTEGRITY CHECKER AND REPAIR
 echo ===================================
 echo.
 echo  1. Run CHKDSK (Check Disk)
-echo  2. Run SFC (System File Checker)
+echo  2. Run SFC (System File Checker : Checks for corrupted files)
 echo  3. Run DISM (Deployment Image Servicing and Management)
 echo  4. Run all checks in sequence
 echo  5. Exit
