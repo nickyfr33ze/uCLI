@@ -64,4 +64,7 @@ if [[ $save_choice == "y" || $save_choice == "Y" ]]; then
     read -p "Enter filename: " filename
     echo "$result" > "$filename"
     echo "Result saved to $filename"
+else
+    echo "Result not saved."
+    exit 0
 fi
