@@ -2,7 +2,7 @@ echo "[*] Running updates..."
 sleep 0.5
 echo "[*] Running: 'sudo apt update'"
 sleep 0.5
-echo "[*] If you are not 'root' please input your password."
+echo "[!] If you are not 'root' please input your password."
 sudo apt update
 sleep 0.5
 echo "------------------------"
@@ -45,7 +45,7 @@ echo "[!] CLEANING COMPLETE."
 sleep 0.5
 echo "============================================"
 sleep 0.5
-echo "[!] TERMINATING PROGRAM."
+echo "[!] TERMINATING PROGRAM. GOODBYE :)"
 sleep 0.5
 echo "==========================================="
 sleep 0.5
