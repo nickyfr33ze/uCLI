@@ -2,7 +2,7 @@ echo "[*] Running updates..."
 Start-Sleep -Seconds 1
 echo "[*] Running: 'winget upgrade --all'"
 Start-Sleep -Seconds 1
-winget upgrade --all
+winget upgrade --all --disable-interactivity
 echo "------------------------"
 Start-Sleep -Seconds 1
 echo "[*] Updates complete."
