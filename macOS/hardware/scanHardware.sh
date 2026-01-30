@@ -8,9 +8,20 @@ read detail_level
 sleep 1 
 echo "[*] Scanning system information with detail level: $detail_level"
 sleep 1
+echo "Do you want to save the output to a file? (y/n)"
+read save_to_file
+sleep 1
 case $detail_level in
     mini|basic|full)
-        system_profiler -detaillevel $detail_level
+        if [[ $save_to_file == "y" || $save_to_file == "Y" ]]; then
+            echo "Enter the filename (e.g., system_info.txt):"
+            read filename
+            echo "[*] Saving output to $filename..."
+            system_profiler -detaillevel $detail_level > "$filename"
+            echo "[*] Output saved to $filename"
+        else
+            system_profiler -detaillevel $detail_level
+        fi
         ;;
     *)
         echo "Invalid detail level. Please choose mini, basic, or full."
