@@ -15,9 +15,10 @@ while True:
     print("ZIP: " + values["zip"])
     print("Latitude: " + str(values["lat"]))
     print("Longitude: " + str(values["lon"]))
-    print("Google Maps: https://www.google.com/maps/search/?api=1&query=" + str(values["lat"]) + "," + str(values["lon"]))
     print("ISP: " + values["isp"])
     print("Country: " + values ["country"])
     print("Region: " + values ["region"])
     print("Timezone: " + values ["timezone"])
+    print("Google Maps: https://www.google.com/maps/search/?api=1&query=" + str(values["lat"]) + "," + str(values
+["lon"]))
     break
