@@ -5,8 +5,53 @@ echo "==================="
 echo "This script helps deobfuscate strings using various methods."
 echo ""
 
-# Get the input string
-read -p "Enter the obfuscated string: " input_string
+# Choose input method
+echo "How would you like to provide input?"
+echo "1. Single line  (type or paste a one-liner)"
+echo "2. Multi-line   (type/paste freely, then press Ctrl+D when done)"
+echo "3. Delimiter    (type lines, enter 'END' on its own line to finish)"
+echo "4. From file    (provide a file path to read from)"
+echo ""
+
+read -p "Input method (1-4): " input_method
+
+case $input_method in
+    1)
+        read -p "Enter the obfuscated string: " input_string
+        ;;
+    2)
+        echo "Paste or type your text below. Press Ctrl+D when finished:"
+        input_string=$(cat)
+        ;;
+    3)
+        echo "Type your text below. Enter 'END' on its own line when finished:"
+        input_string=""
+        while IFS= read -r line; do
+            [[ "$line" == "END" ]] && break
+            if [[ -z "$input_string" ]]; then
+                input_string="$line"
+            else
+                input_string="$input_string"$'\n'"$line"
+            fi
+        done
+        ;;
+    4)
+        read -p "Enter the file path: " filepath
+        if [[ -f "$filepath" ]]; then
+            input_string=$(cat "$filepath")
+        else
+            echo "Error: File not found — $filepath"
+            exit 1
+        fi
+        ;;
+    *)
+        echo "Invalid input method."
+        exit 1
+        ;;
+esac
+
+echo ""
+echo "Input captured ($(echo "$input_string" | wc -l | tr -d ' ') line(s), $(echo -n "$input_string" | wc -c | tr -d ' ') bytes)"
 
 # Show menu of deobfuscation options
 echo ""
